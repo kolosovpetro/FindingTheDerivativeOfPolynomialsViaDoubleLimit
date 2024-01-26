@@ -1,8 +1,8 @@
 (* ::Package:: *)
 
-BeginPackage["GithubLatexTemplateMathematicaPackage`"]
+BeginPackage["DifferentiationOfPolynomialsViaDoubleLimit`"]
 
-A::usage= "A[n, k] returns the real coefficient A of non-negative integers n, k such that n <= k. 
+A::usage= "A[n, k] returns the real coefficient A of non-negative integers n, k such that n <= k.
 See https://kolosovpetro.github.io/pdf/AStudyOnDynamicEquations.pdf."
 
 L::usage= "L[m, n, k] returns the polynomial L of integers m, n, k. See https://kolosovpetro.github.io/pdf/AStudyOnDynamicEquations.pdf."
