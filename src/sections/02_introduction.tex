@@ -57,12 +57,14 @@ For instance, let be $m=2$ then $x^5$ polynomial function's change is
 \end{equation*}
 Therefore, the derivative of odd-power polynomial $x^{2m+1}, \; x\in\mathbb{R}, \; m\in\mathbb{N}$ can be expressed in terms of double limit as follows
 \begin{equation}
-    \odv{x^{2m+1}}{x} = \lim_{h \to 0} \lim_{b \to x+h} \left[ \frac{\polynomialP{m}{b}{x+h} - x^{2m+1}}{h} \right]\label{eq:odd-power-derivative}
+    \odv{x^{2m+1}}{x} = \lim_{h \to 0} \lim_{b \to x+h} \left[ \frac{\polynomialP{m}{b}{x+h} - x^{2m+1}}{h} \right] \label{eq:odd-power-derivative}
 \end{equation}
 For example, given $m=1$ and therefore $f(x) = x^3$ we get
 \begin{equation*}
     \begin{split}
-        \odv{x^3}{x} &= \lim_{h \to 0} \left[ 3 h - 2 h^2 + 6 x - 6 h x - 6 x^2 + \frac{3 x^2}{h} \right. \\
+        \odv{x^3}{x}
+        &=\lim_{h \to 0} \lim_{b \to x+h} \left[ \frac{\polynomialP{1}{b}{x+h} - x^{3}}{h} \right]
+        = \lim_{h \to 0} \left[ 3 h - 2 h^2 + 6 x - 6 h x - 6 x^2 + \frac{3 x^2}{h} \right. \\
         &- \left.\frac{3 x^3}{h} - 3 (h + x) + 3 h (h + x) + 6 x (h + x)- \frac{3 x (h + x)}{h} + \frac{3 x^2 (h + x)}{h} \right] \\
         &=\lim_{h \to 0} \left[ h^2 + 3 h x + 3 x^2 \right] = 3x^2
     \end{split}
@@ -77,6 +79,7 @@ Given $m=1$, the gain of even-powered polynomial $x^{2m+2}$ in its extended form
     \begin{split}
     (x+h)
         ^{2m+2} - x^{2m+2}
+        &= \lim_{b \to x+h} \left[ x\polynomialP{m}{b}{x+h} + h\polynomialP{m}{b}{x+h}  - x^{2m+2} \right] \\
         &= 3 h^3 - 2 h^4 + 9 h^2 x - 8 h^3 x + 9 h x^2 - 12 h^2 x^2 + 3 x^3 \\
         &- 8 h x^3 - 3 x^4 - 3 h^2 (h + x) + 3 h^3 (h + x) - 6 h x (h + x) \\
         &+ 9 h^2 x (h + x) - 3 x^2 (h + x) + 9 h x^2 (h + x) + 3 x^3 (h + x)
