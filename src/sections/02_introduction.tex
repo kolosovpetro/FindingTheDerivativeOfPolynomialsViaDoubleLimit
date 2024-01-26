@@ -49,12 +49,41 @@ as limit
 For instance, let be $m=2$ then $x^5$ polynomial function's change is
 \begin{equation*}
     \begin{split}
-        (x+h)^{5} - x^{5} &= \lim_{b \to x+h} \left[ \polynomialP{2}{b}{x+h} - x^{5} \right] \\
-                          &= \lim_{b \to x+h} \left[ 5 b^2 x - 15 b x^2 - 15 b^2 x^2 + 10 x^3 + 30 b x^3 + 10 b^2 x^3 - 15 x^4 - 15 b x^4 + 5 x^5 \right] \\
-                          &= h^5 + 5 h^4 x + 10 h^3 x^2 + 10 h^2 x^3 + 5 h x^4
+    (x+h)
+        ^{5} - x^{5} &= \lim_{b \to x+h} \left[ \polynomialP{2}{b}{x+h} - x^{5} \right] \\
+        &= \lim_{b \to x+h} \left[ 5 b^2 x - 15 b x^2 - 15 b^2 x^2 + 10 x^3 + 30 b x^3 + 10 b^2 x^3 - 15 x^4 - 15 b x^4 + 5 x^5 \right] \\
+        &= h^5 + 5 h^4 x + 10 h^3 x^2 + 10 h^2 x^3 + 5 h x^4
     \end{split}
 \end{equation*}
 Therefore, the derivative of odd-power polynomial $x^{2m+1}, \; x\in\mathbb{R}, \; m\in\mathbb{N}$ can be expressed in terms of double limit as follows
+\begin{equation}
+    \odv{x^{2m+1}}{x} = \lim_{h \to 0} \lim_{b \to x+h} \left[ \frac{\polynomialP{m}{b}{x+h} - x^{2m+1}}{h} \right]\label{eq:odd-power-derivative}
+\end{equation}
+For example, given $m=1$ and therefore $f(x) = x^3$ we get
 \begin{equation*}
-    \odv{x^{2m+1}}{x} = \lim_{h \to 0} \lim_{b \to x+h} \left[ \frac{\polynomialP{m}{b}{x+h} - x^{2m+1}}{h} \right]
+    \begin{split}
+        \odv{x^3}{x} &= \lim_{h \to 0} \left[ 3 h - 2 h^2 + 6 x - 6 h x - 6 x^2 + \frac{3 x^2}{h} \right. \\
+        &- \left.\frac{3 x^3}{h} - 3 (h + x) + 3 h (h + x) + 6 x (h + x)- \frac{3 x (h + x)}{h} + \frac{3 x^2 (h + x)}{h} \right] \\
+        &=\lim_{h \to 0} \left[ h^2 + 3 h x + 3 x^2 \right] = 3x^2
+    \end{split}
+\end{equation*}
+Even-powered $2m+2, \; m\geq 0$ polynomials can be differentiated similarly, expressing the function's gain in terms
+of limit of the polynomial $\polynomialP{m}{b}{x}$, i.e
+\[
+    (x+h)^{2m+2} - x^{2m+2} = \lim_{b \to x+h} \left[ x\polynomialP{m}{b}{x+h} + h\polynomialP{m}{b}{x+h}  - x^{2m+2} \right]
+\]
+Given $m=1$, the gain of even-powered polynomial $x^{2m+2}$ in its extended form is
+\begin{equation*}
+    \begin{split}
+    (x+h)
+        ^{2m+2} - x^{2m+2}
+        &= 3 h^3 - 2 h^4 + 9 h^2 x - 8 h^3 x + 9 h x^2 - 12 h^2 x^2 + 3 x^3 \\
+        &- 8 h x^3 - 3 x^4 - 3 h^2 (h + x) + 3 h^3 (h + x) - 6 h x (h + x) \\
+        &+ 9 h^2 x (h + x) - 3 x^2 (h + x) + 9 h x^2 (h + x) + 3 x^3 (h + x)
+    \end{split}
+\end{equation*}
+So that generally speaking of even-powered polynomial $x^{2m+2}, \; m\geq 1$ we can conclude that its derivative
+can be expressed as double limit similarly to~\eqref{eq:odd-power-derivative}
+\begin{equation*}
+    \odv{x^{2m+2}}{x} =\lim_{h \to 0} \lim_{b \to x+h} \left[ \frac{x\polynomialP{m}{b}{x+h} + h\polynomialP{m}{b}{x+h}  - x^{2m+2}}{h} \right]
 \end{equation*}
