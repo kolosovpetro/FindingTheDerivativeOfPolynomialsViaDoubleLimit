@@ -1,1 +1,1 @@
-# Differentiation of polynomials via double limit
+# Finding the derivative of polynomials via double limit
