@@ -2,11 +2,11 @@ Differentiation is process of finding the derivative, or rate of change, of a fu
 Derivative of a function $f(x)$ over domain $x$ is defined by the limit of function's change divided
 by the function's argument change as change tends to zero, i.e
 \begin{equation*}
-    \frac{d}{dx} f(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+    \odv{f(x)}{x} = \lim_{h \to 0} \left[ \frac{f(x+h) - f(x)}{h} \right]
 \end{equation*}
 Given the polynomial function $f(x)=x^n, \; n \in \mathbb{N}$ its derivative expressed as follows
 \begin{equation}
-    \frac{d}{dx} x^n = \lim_{h \to 0} \frac{(x+h)^n - x^n}{h} \label{eq:polynomial_derivative}
+    \odv{x^n}{x} = \lim_{h \to 0} \left[ \frac{(x+h)^n - x^n}{h} \right] \label{eq:polynomial_derivative}
 \end{equation}
 Therefore, the change of polynomial function from the nominator of~\eqref{eq:polynomial_derivative}
 is being expressed applying Binomial theorem (citation) so that
@@ -16,11 +16,11 @@ is being expressed applying Binomial theorem (citation) so that
 \end{equation*}
 Hence, arriving to well-known identity
 \begin{equation*}
-    \frac{d}{dx} x^n = \lim_{h \to 0} \frac{1}{h} \sum_{k=1}^{n} \binom{n}{k} x^{n-k} h^k = n x^{n-1}
+    \odv{x^n}{x} = \lim_{h \to 0} \left[ \frac{1}{h} \sum_{k=1}^{n} \binom{n}{k} x^{n-k} h^k \right] = n x^{n-1}
 \end{equation*}
 More precisely, consider the case $f(x) = x^5, \; x\in\mathbb{R}$
 \begin{equation*}
-    \frac{d}{dx} x^5 = \lim_{h \to 0} \frac{5 h^4 x + 10 h^3 x^2 + 10 h^2 x^3 + 5 h x^4}{h} = 5x^4
+    \frac{d}{dx} x^5 = \lim_{h \to 0} \left[ \frac{5 h^4 x + 10 h^3 x^2 + 10 h^2 x^3 + 5 h x^4}{h} \right] = 5x^4
 \end{equation*}
 However, there is another approach to express the polynomial function's change $(x+h)^n - x^n$ using polynomial identity
 (citation), that is
