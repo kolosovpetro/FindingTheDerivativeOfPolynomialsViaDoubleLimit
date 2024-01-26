@@ -20,7 +20,7 @@ Hence, arriving to well-known identity
 \end{equation*}
 More precisely, consider the case $f(x) = x^5, \; x\in\mathbb{R}$
 \begin{equation*}
-    \frac{d}{dx} x^5 = \lim_{h \to 0} \left[ \frac{5 h^4 x + 10 h^3 x^2 + 10 h^2 x^3 + 5 h x^4}{h} \right] = 5x^4
+    \odv{x^5}{x} = \lim_{h \to 0} \left[ \frac{5 h^4 x + 10 h^3 x^2 + 10 h^2 x^3 + 5 h x^4}{h} \right] = 5x^4
 \end{equation*}
 However, there is another approach to express the polynomial function's change $(x+h)^n - x^n$ using polynomial identity
 (citation), that is
@@ -53,4 +53,8 @@ For instance, let be $m=2$ then $x^5$ polynomial function's change is
                           &= \lim_{b \to x+h} \left[ 5 b^2 x - 15 b x^2 - 15 b^2 x^2 + 10 x^3 + 30 b x^3 + 10 b^2 x^3 - 15 x^4 - 15 b x^4 + 5 x^5 \right] \\
                           &= h^5 + 5 h^4 x + 10 h^3 x^2 + 10 h^2 x^3 + 5 h x^4
     \end{split}
+\end{equation*}
+Therefore, the derivative of odd-power polynomial $x^{2m+1}, \; x\in\mathbb{R}, \; m\in\mathbb{N}$ can be expressed in terms of double limit as follows
+\begin{equation*}
+    \odv{x^{2m+1}}{x} = \lim_{h \to 0} \lim_{b \to x+h} \left[ \frac{\polynomialP{m}{b}{x+h} - x^{2m+1}}{h} \right]
 \end{equation*}
