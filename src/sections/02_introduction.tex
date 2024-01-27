@@ -103,3 +103,12 @@ So that given $m=1$, the derivative $\odv{x^4}{x}$ of even-powered polynomial $x
         &\left. + 9 h^2 x (h + x) - 3 x^2 (h + x) + 9 h x^2 (h + x) + 3 x^3 (h + x) \right] = 4x^3
     \end{split}
 \end{equation*}
+Therefore, in its general form the derivative of polynomial function $f(x)=x^n$ can be expressed via
+\begin{equation}
+    \label{eq:polynomial-derivative-main-results}
+    \odv{x^n}{x} =
+    \begin{cases}
+        \lim_{h \to 0} \lim_{b \to x+h} \left[ \frac{x\polynomialP{m}{b}{x+h} + h\polynomialP{m}{b}{x+h}  - x^{2m+2}}{h} \right] \quad &n=2m+2 \\
+        \lim_{h \to 0} \lim_{b \to x+h} \left[ \frac{\polynomialP{m}{b}{x+h} - x^{2m+1}}{h} \right] \quad &n=2m+1
+    \end{cases}
+\end{equation}
