@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  FILE_NAME: "DifferentiationOfPolynomialsViaDoubleLimit"
+  FILE_NAME: "FindingTheDerivativeOfPolynomialsViaDoubleLimit"
 
 jobs:
   build-pdf:
@@ -87,4 +87,4 @@ jobs:
         env:
           USERNAME: "kolosovpetro"
           EMAIL: "kolosovp94@gmail.com"
-          MESSAGE: "CICD deploy of DifferentiationOfPolynomialsViaDoubleLimit PDF document"
+          MESSAGE: "CICD deploy of ${{ env.FILE_NAME }} PDF document"

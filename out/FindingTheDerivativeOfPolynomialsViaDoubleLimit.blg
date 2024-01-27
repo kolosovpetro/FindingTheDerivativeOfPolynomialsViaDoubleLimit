@@ -1,13 +1,13 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: DifferentiationOfPolynomialsViaDoubleLimit.aux
+The top-level auxiliary file: FindingTheDerivativeOfPolynomialsViaDoubleLimit.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
-Reallocating 'name_of_file' (item size: 1) to 43 items.
-Database file #1: DifferentiationOfPolynomialsViaDoubleLimit.bib
+Reallocating 'name_of_file' (item size: 1) to 48 items.
+Database file #1: FindingTheDerivativeOfPolynomialsViaDoubleLimit.bib
 You've used 4 entries,
             1791 wiz_defined-function locations,
-            470 strings with 4297 characters,
+            470 strings with 4307 characters,
 and the built_in function-call counts, 705 in all, are:
 = -- 63
 > -- 23
